@@ -2,12 +2,16 @@ import logo from "./logo.svg";
 import "./App.css";
 
 export const App = () => {
+	// Императивный стиль
+	const currentDate = new Date();
+	const currentYear = currentDate.getFullYear();
+	// Декларативный стиль
 	return (
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
 				<p>
-					Edit <code>src/App.js</code> and save to reload 2.
+					Edit <code>src/App.js</code> and save to reload.
 				</p>
 				<a
 					className="App-link"
@@ -17,6 +21,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{currentYear}</p>
 			</header>
 		</div>
 	);
